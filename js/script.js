@@ -14,7 +14,7 @@ buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 function printMessage(msg){
-	var div = document.createElement('div');
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
@@ -23,7 +23,7 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * Describe this function...
